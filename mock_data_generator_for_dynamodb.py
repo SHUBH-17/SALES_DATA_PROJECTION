@@ -5,7 +5,7 @@ from decimal import Decimal
 
 # Initialize the DynamoDB resource
 # dynamodb = boto3.resource('dynamodb')
-session = boto3.Session(profile_name='default', region_name='us-east-1')
+session = boto3.Session(profile_name='default', region_name='ap-south-1')
 dynamodb = session.resource('dynamodb')
 table = dynamodb.Table('OrdersRawTable') 
 
